@@ -21,6 +21,13 @@ Setting this shorter will yield a higher load on the Emby server, but on a low l
 
 Known Issue: Chromecasts cannot follow, but can lead.  Workaround by controlling the device casting to the Chromecast.
 
+# Troubleshooting
+## Local players can sync, but Internet players can't:
+Even if Emby can normally play over the internet, your reverse proxy might be configured wrong.
+In the developer console on your browser you might see `wss://` related errors.
+This means that your reverse proxy isn't correctly configured.
+See [https://emby.media/community/index.php?/topic/47508-how-to-nginx-reverse-proxy/](https://emby.media/community/index.php?/topic/47508-how-to-nginx-reverse-proxy/) to correct your setup. 
+
 # Development
 API reference:
 [http://swagger.emby.media/?staticview=true#/SessionsService/](http://swagger.emby.media/?staticview=true#/SessionsService/)
